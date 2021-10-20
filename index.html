@@ -4,111 +4,128 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nazar CV</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Онищенко Назар</h1>
-    <img src="img/MyPhoto.jpg" width="200" alt="MyPhoto" />
-    <p>
-      <em>
-        Я студент 4-го курса в
-        <strong>
-          НТУУ КПИ факультет ТЕФ на специальности 122 Компьютерные науки
-        </strong>
-        .
-      </em>
-    </p>
-    <p>
-      <em
-        >Люблю заниматься спортом, плаванием, играть на гитаре и
-        програмировать.</em
-      >
-    </p>
-    <hr />
-    <h2>Мои социальные сети</h2>
-    <ul type="none">
-      <li>
-        <a href="https://www.instagram.com/anazar1e/" target="_blank"
-          >Instagram</a
-        >
-      </li>
-      <li><a href="https://t.me/hexadecim" target="_blank">Telegram</a></li>
-      <li>
-        <a
-          href="https://www.facebook.com/profile.php?id=100007371426979"
-          target="_blank"
-          >Facebook</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://www.linkedin.com/in/nazar-onischenko-020511197/"
-          target="_blank"
-          >Linkedin</a
-        >
-      </li>
-    </ul>
-    <hr />
-    <h2>Мои хобби</h2>
-    <ol type="1">
-      <li>Игра на гитаре</li>
-      <li>Спорт: workout, trx, йога</li>
-      <li>Вечерняя прогулка</li>
-    </ol>
-    <hr />
-    <h2>Связаться со мной</h2>
-    <form action="/">
-      <label for="name">Ваше имя:</label>
-      <input type="text" id="name" placeholder="Введите ваше имя" />
+    <div class="container">
+      <div class="info">
+        <img src="img/MyPhoto.jpg" class="avatar" alt="MyPhoto" />
 
-      <br />
+        <div class="text-info">
+          <h1>Онищенко Назар</h1>
+          <p>
+            Я студент 4-го курса в
+            <strong>
+              НТУУ КПИ факультет ТЕФ на специальности 122 Компьютерные науки
+            </strong>
+            .
+          </p>
+          <p>
+            Люблю заниматься спортом, плаванием, играть на гитаре и
+            програмировать.
+          </p>
+          <h4>Мои социальные сети</h4>
 
-      <label for="phone">Ваш номер телефона:</label>
-      <input type="phone" id="phone" placeholder="Введите ваш номер" />
+          <a href="https://www.instagram.com/anazar1e/" target="_blank"
+            >Instagram</a
+          >
+          |
+          <a href="https://t.me/hexadecim" target="_blank">Telegram</a>
+          |
+          <a
+            href="https://www.facebook.com/profile.php?id=100007371426979"
+            target="_blank"
+            >Facebook</a
+          >
+          |
 
-      <br />
+          <a
+            href="https://www.linkedin.com/in/nazar-onischenko-020511197/"
+            target="_blank"
+            >Linkedin</a
+          >
+        </div>
+      </div>
 
-      <label for="desc">Ваш коментарий:</label>
-      <br />
-      <textarea
-        name="desc"
-        id="desc"
-        cols="15"
-        rows="2"
-        placeholder="Введите коментарий"
-      ></textarea>
+      <div class="card bg-yellow">
+        <h4>Мои хобби</h4>
+        <ol class="list">
+          <li>Игра на гитаре</li>
+          <li>Спорт: workout, trx, йога</li>
+          <li>Вечерние прогулки</li>
+        </ol>
+      </div>
+      <div class="card bg-green">
+        <h2>Основные навыки</h2>
+        <table class="table">
+          <tr>
+            <td><strong>Название</strong></td>
+            <td><strong>Фреймворки</strong></td>
+            <td><strong>Опыт работы</strong></td>
+          </tr>
+          <tr>
+            <td>С#</td>
+            <td>.NET Core</td>
+            <td>1 год</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>Angular</td>
+            <td>С JS 1 год, с Angular 1 месяц</td>
+          </tr>
+          <tr>
+            <td>SQL</td>
+            <td>MySQL, MSSQL</td>
+            <td>1 год</td>
+          </tr>
+        </table>
+      </div>
+      <div class="card bg-red">
+        <h3>Дополнительные навыки</h3>
+        <p>
+          Linq, EntityFramework, ASP.NET Core, HTML, CSS, Git, VisualStudio,
+          VisualStudioCode
+        </p>
+      </div>
 
-      <br />
+      <div class="contacts">
+        <h2>Связаться со мной</h2>
+        <form action="/">
+          <div class="row">
+            <div class="form-group">
+              <label for="name">Ваше имя:</label>
+              <input type="text" id="name" placeholder="Введите ваше имя" />
+            </div>
+            <div class="form-group">
+              <label for="phone">Ваш номер телефона:</label>
+              <input type="phone" id="phone" placeholder="Введите ваш номер" />
+            </div>
+          </div>
 
-      <input type="submit" value="Связаться" />
-    </form>
-    <hr />
-    <h2>Основные навыки</h2>
-    <table border="1">
-      <tr>
-        <th scope="col">Название</th>
-        <th scope="col">Фреймворки</th>
-        <th scope="col">Опыт работы</th>
-      </tr>
-      <tr>
-        <th scope="row">С#</th>
-        <td>.NET Core</td>
-        <td>1 год</td>
-      </tr>
-      <tr>
-        <th scope="row">JavaScript</th>
-        <td>Angular</td>
-        <td>С JS 1 год, с Angular 1 месяц</td>
-      </tr>
-      <tr>
-        <th scope="row">SQL</th>
-        <td>MySQL, MSSQL</td>
-        <td>1 год</td>
-      </tr>
-    </table>
-    <h3>Дополнительные навыки</h3>
-    <p>
-      Linq, EntityFramework, ASP.NET Core, HTML, CSS, Git, VisualStudio,
-      VisualStudioCode
-    </p>
+          <div class="form-group">
+            <label for="desc">Ваш коментарий:</label>
+
+            <textarea
+              name="desc"
+              id="desc"
+              cols="15"
+              rows="2"
+              placeholder="Введите коментарий"
+            ></textarea>
+          </div>
+
+          <input class="btn" type="submit" value="Связаться" />
+        </form>
+      </div>
+      <!-- <div class="position">
+        <div class="box"></div>
+      </div> -->
+      <!-- <div class="box-model">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div> -->
+    </div>
   </body>
 </html>
